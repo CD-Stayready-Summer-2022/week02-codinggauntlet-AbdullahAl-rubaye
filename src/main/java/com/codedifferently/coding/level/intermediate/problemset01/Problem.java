@@ -1,5 +1,7 @@
 package com.codedifferently.coding.level.intermediate.problemset01;
 
+import java.util.Arrays;
+
 public class Problem {
 
     /* Problem 01
@@ -17,7 +19,10 @@ public class Problem {
 
     public static String stringCopies(String word, int n) {
 
-        return null;
+            //System.out.println( word.repeat(n) );
+
+
+        return word.repeat(n);
     }
 
 
@@ -32,8 +37,10 @@ public class Problem {
      */
 
     public static Boolean followedX(String str) {
-
-        return null;
+        if(str.contains("xx")){
+            return true;
+        }
+        return false;
     }
 
 
@@ -70,8 +77,15 @@ public class Problem {
      */
 
     public static Boolean basicNumbers123(int[] nums) {
+        boolean ret1 = Arrays.asList(nums).contains(1);
+        boolean ret2 = Arrays.asList(nums).contains(2);
+        boolean ret3 = Arrays.asList(nums).contains(3);
 
-        return null;
+        if(ret1 && ret2 && ret3){
+            return true;
+        }
+
+        return false;
     }
 
 
@@ -90,8 +104,10 @@ public class Problem {
      */
 
     public static String scrambleOfLetters(String scramble) {
+        for (int i = 0; i < scramble.length(); i++) {
 
-        return null;
+        }
+        return scramble;
     }
 
 
